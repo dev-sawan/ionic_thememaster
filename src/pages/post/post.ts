@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavParams, NavController, LoadingController, AlertController } from 'ionic-angular';
+
+import { DocumentViewer } from '@ionic-native/document-viewer';
 import { LoginPage } from '../login/login';
 import { HomePage } from '../home/home';
 import { WordpressService } from '../../services/wordpress.service';
@@ -20,16 +22,21 @@ export class PostPage {
   categories: Array<any> = new Array<any>();
   morePagesAvailable: boolean = true;
 
+
+  
   constructor(
     public navParams: NavParams,
     public navCtrl: NavController,
     public loadingCtrl: LoadingController,
     public alertCtrl: AlertController,
     public wordpressService: WordpressService,
+    // private document: DocumentViewer,
     public authenticationService: AuthenticationService
   ) {
 
   }
+
+  
 
   ionViewWillEnter(){
     this.morePagesAvailable = true;

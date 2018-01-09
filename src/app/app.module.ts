@@ -14,10 +14,12 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { WordpressService } from '../services/wordpress.service';
 import { AuthenticationService } from '../services/authentication.service';
+//import { PdfViewerModule} from 'ng2-pdf-viewer'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { NativeStorage } from '@ionic-native/native-storage';
+// import { DocumentViewer}  from '@ionic-native/document-viewer'
 @NgModule({
   declarations: [
     MyApp,
@@ -26,6 +28,7 @@ import { NativeStorage } from '@ionic-native/native-storage';
     LoginPage,
     RegisterPage,
     ContactPage,
+    // DocumentViewer,
     HomePage,
     TabsPage
   ],
